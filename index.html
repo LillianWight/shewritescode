@@ -1,197 +1,435 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>trillo &mdash; Your all-in-one booking app</title>
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">
-                <img src="img/logo.png" alt="trillo logo" class="logo">
+<html>
+	<head>
+		<title>The Perfect Website</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+		
+		<link href="css/icon-font.css" rel="stylesheet">
+		<link href="sass/styles.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/lightbox.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/lightbox.min.js"></script>
+		
+	</head>
+	<body>
+		<header class="header">
+		<div class="header__textBox">
+		<h1 class="primaryHeading">
+			<span class="primaryHeading--main">Your Website Will Be</span>
+			<span class="primaryHeading--sub">Beautiful</span>
+		</h1>
+		<!-- hidden 
+		<a href="#" class="button button--showMe">show me</a> -->
+		</div><!-- end textBox -->
+		</header>
 
-                <form action="#" class="search">
-                    <input type="text" class="search__input" placeholder="Search hotels">
-                    <button class="search__button">
-                        <svg class="search__icon">
-                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-                        </svg>
-                    </button>
-                </form>
+		<main>
+            <section class="section-about">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">You are the beholder</h2>
+				</div><!-- end u-center-text -->
 
-                <nav class="user-nav">
-                    <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
-                        </svg>
-                        <span class="user-nav__notification">7</span>
-                    </div>
-                    <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-chat"></use>
-                        </svg>
-                        <span class="user-nav__notification">13</span>
-                    </div>
-                    <div class="user-nav__user">
-                        <img src="img/user.jpg" alt="User photo" class="user-nav__user-photo">
-                        <span class="user-nav__user-name">Jonas</span>
-                    </div>
-                </nav>
-            </header>
-            <div class="content">
-                <nav class="sidebar">
-                    <ul class="side-nav">
-                        <li class="side-nav__item side-nav__item--active">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-home"></use>
-                                </svg>
-                                <span>Hotel</span>
-                            </a>
-                        </li>
-                        <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
-                                </svg>
-                                <span>Flights</span>
-                            </a>
-                        </li>
-                        <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-key"></use>
-                                </svg>
-                                <span>Car Rentals</span>
-                            </a>
-                        </li>
-                        <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-map"></use>
-                                </svg>
-                                <span>Tours</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="legal">
-                        &copy; 2020 by trillo. All Rights Reserved.
-                    </div>
-                </nav>
-                <main class="hotel-view">
-                    <div class="gallery">
-                        <figure class="gallery__item">
-                            <img src="img/hotel-1.jpg" alt="Photo of Hotel 1" class="gallery__photo">
-                        </figure>
-                        <figure class="gallery__item">
-                            <img src="img/hotel-2.jpg" alt="Photo of Hotel 2" class="gallery__photo">
-                        </figure>
-                        <figure class="gallery__item">
-                            <img src="img/hotel-3.jpg" alt="Photo of Hotel 3" class="gallery__photo">
-                        </figure>
-                    </div><!-- end gallery -->
-                    <div class="overview">
-                        <h1 class="overview__heading">Hotel Las Palmas</h1>
-                        <div class="overview__stars">
-                            <svg class="overview__icon-star">
-                                <use xlink:href="img/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="overview__icon-star">
-                                <use xlink:href="img/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="overview__icon-star">
-                                <use xlink:href="img/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="overview__icon-star">
-                                <use xlink:href="img/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="overview__icon-star">
-                                <use xlink:href="img/sprite.svg#icon-star"></use>
-                            </svg>
-                        </div><!-- end overview__stars -->
-                        <div class="overview__location">
-                            <svg class="overview__icon-location">
-                                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
-                            </svg>
-                            <button class="btn-inline">Albufeira, Portugal</button>
-                        </div><!-- end overview__location -->
+				<div class="row">
+                    <div class="col-1-of-2">
+                        <h3 class="heading-tertiary u-margin-bottom-small">What you see...</h3>
+                        <p class="paragraph">...is <strong>not</strong></> what you'll get. My Web site is flowery because that's what I like. Your Web site will be different. Sleek, sophisticated, simple: you'll get what's beautiful to <strong>you</strong>.</p>
                         
-                        <div class="overview__rating">
-                            <div class="overview__rating-average">8.6</div>
-                            <div class="overview__rating-count">429 votes</div>
-                        </div><!-- end overview__rating -->
-                    </div><!-- end overview -->
-                    <div class="detail">
-                        <div class="description">
-                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.</p>
-                            <p class="paragraph">Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.</p>
-                            <ul class="list">
-                                <li class="list__item">Breakfast included</li>
-                                <li class="list__item">Free airport shuttle</li>
-                                <li class="list__item">Free wifi in all rooms</li>
-                                <li class="list__item">Air conditioning and heating</li>
-                                <li class="list__item">Pets allowed</li>
-                                <li class="list__item">We speak all languages</li>
-                                <li class="list__item">Close to the beach</li>
-                                <li class="list__item">Perfect for families</li>
-                            </ul>
-                            <div class="recommend">
-                                <p class="recommend__count">Lucy and three other friends recommend this hotel</p>
-                                <div class="recommend__friends">
-                                    <img src="img/user-3.jpg" alt="Friend 1" class="recommend__photo">
-                                    <img src="img/user-4.jpg" alt="Friend 2" class="recommend__photo">
-                                    <img src="img/user-5.jpg" alt="Friend 3" class="recommend__photo">
-                                    <img src="img/user-6.jpg" alt="Friend 4" class="recommend__photo">
-                                </div><!-- end recommend__friends -->
-                            </div><!-- end recommend -->
-                        </div><!-- end description -->
+                        <h3 class="heading-tertiary u-margin-bottom-small">Beyond beautiful</h3>
+                        <p class="paragraph">Will your Web site require a <strong>registration form</strong>? A <strong>shopping cart</strong>? A <strong>calender of events</strong>? Let's ensure you don't miss a thing:</p>
                         
-                        <figure class="user-reviews">
-                            <figure class="review">
-                                <blockquote class="review__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
-                                </blockquote>
-                                <figcaption class="review__user">
-                                    <img src="img/user-1.jpg" alt="User 1" class="review__photo">
-                                    <div class="review__user-box">
-                                        <p class="review__user-name">Nick Smith</p>
-                                        <p class="review__user-date">Feb. 23, 2017</p>
-                                    </div><!-- end review__user-box -->
-                                    <div class="review__rating">7.8</div>
-                                </figcaption><!-- end review__user -->
-                            </figure><!-- end review -->
+                        <a href="#" class=" button button--questionnaire">complete my questionnaire</a>
+                    </div><!-- end col-1-of-2 -->
+                    
+                    <div class="col-1-of-2">
+                        <div class="samples">
+                            <img src="images/blue-succulent.jpg" alt="Closeup of blue-green succulent" class="samples__photo samples__photo--s1">
+                            
+                            <img src="images/peony-2.jpg" alt="Closeup of deeply red rose" class="samples__photo samples__photo--s2">
+                            
+                            <img src="images/orange-flower.jpg" alt="Closeup of orange flower" class="samples__photo samples__photo--s3">
+                        </div><!-- end samples -->
+                    
+                    </div><!-- end col-1-of-2 -->
+                </div><!-- row -->
+			</section>
+			
+			<section class="section-process">
+					<div class="row">
+						<div class="col-1-of-4">
+							<div class="process-box">
+								<i class="process-box__icon icon-basic-todolist-pencil"></i>
+								<h3 class="heading-tertiary u-margin-bottom-small">Step 1</h3>
+								<p class="process-box__text">
+									You'll complete my <a href="#" class="button-text">questionnaire</a> and we'll do some back-and-forth until I know what you need.
+								</p>
+							</div><!-- end process-box -->
+						</div><!-- end col-1-of-4 -->
 
-                            <figure class="review">
-                                <blockquote class="review__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
-                                </blockquote>
-                                <figcaption class="review__user">
-                                    <img src="img/user-2.jpg" alt="User 2" class="review__photo">
-                                    <div class="review__user-box">
-                                        <p class="review__user-name">Mary Thomas</p>
-                                        <p class="review__user-date">Sept. 13, 2017</p>
-                                    </div><!-- end review__user-box -->
-                                    <div class="review__rating">9.3</div>
-                                </figcaption><!-- end review__user -->
-                            </figure><!-- end review -->
-                            <button class="btn-inline">Show all <span>&rarr;</span></button>
-                        </figure><!-- end user-reviews -->
-                        
-                    </div><!-- end detail -->
-                    <div class="cta">
-                        <h2 class="cta__book-now">Good news! We have 4 free rooms for your selected dates!</h2>
-                        <button class="btn">
-                            <span class="btn__visible">Book now</span>
-                            <span class="btn__invisible">Only 4 rooms left</span>
-                        </button>
-                    </div><!-- end cta -->
-                </main><!-- end hotel-view -->
-            </div><!-- end content -->
-        </div><!-- end container -->
-    </body>
+						<div class="col-1-of-4">
+							<div class="process-box">
+								<i class="process-box__icon icon-basic-signs"></i>
+								<h3 class="heading-tertiary u-margin-bottom-small">Step 2</h3>
+								<p class="process-box__text">
+									I'll present you with three Web site options, from basic to premium. You'll choose one and pay a deposit.
+								</p>
+							</div><!-- end process-box -->
+						</div><!-- end col-1-of-4 -->
+
+						<div class="col-1-of-4">
+							<div class="process-box">
+								<i class="process-box__icon icon-basic-gear"></i>
+								<h3 class="heading-tertiary u-margin-bottom-small">Step 3</h3>
+								<p class="process-box__text">
+									I'll produce a draft within an agreed-upon time frame, then we'll tweak it until you're ready to see it go live.
+								</p>
+							</div><!-- end process-box -->
+						</div><!-- end col-1-of-4 -->
+
+						<div class="col-1-of-4">
+							<div class="process-box">
+								<i class="process-box__icon icon-basic-life-buoy"></i>
+								<h3 class="heading-tertiary u-margin-bottom-small">Step 4</h3>
+								<p class="process-box__text">
+									For at least 30 days after the site goes live I'll be available at no charge to ensure the site is as you want it.
+								</p>
+							</div><!-- end process-box -->
+						</div><!-- end col-1-of-4 -->
+					</div><!-- end row -->
+				</div><!-- end u-center-text -->
+			</section><!-- end section-processs -->
+
+			<section class="section-options">
+				<div class="u-center-text u-margin-bottom-big">
+					<h2 class="heading-secondary">The Options</h2>
+				</div><!-- end u-center-text -->
+
+				<div class="row">
+					<div class="col-1-of-3">
+						<div class="card">
+							<div class="card__side card__side--front">
+								<div class="card__picture card__picture--1">
+									&nbsp;
+								</div><!-- end card__picture -->
+								<h4 class="card__heading">
+									<span class="card__heading-span card__heading-span--1">The Online Presence</span>
+								</h4>
+								<div class="card__details">
+									<ul>
+										<li>Single-page</li>
+										<li>Static</li>
+										<li>Information-only</li>
+										<li>Low-maintenance</li>
+										<li>48-hour turnaround</li>
+									</ul>									
+								</div><!-- end card__details -->
+							</div><!-- end card__side -->
+
+							<div class="card__side card__side--back card__side--back-1">
+								<div class="card__cta">
+									<div class="card__price-box">
+										<p class="card__price-from">From</p>
+										<p class="card__price-value">$475</p>
+									</div><!-- end card__price-box -->
+									<a href="#popup-1"><i class="card__cta--icon-1 icon-basic-heart"></i></a>
+								</div><!-- end card__cta -->
+							</div><!-- end card__side -->
+						</div><!-- end card -->
+					</div><!-- end col-1-of-3 -->
+
+					<div class="col-1-of-3">
+						<div class="card">
+							<div class="card__side card__side--front">
+								<div class="card__picture card__picture--2">
+									&nbsp;
+								</div><!-- end card__picture -->
+								<h4 class="card__heading">
+									<span class="card__heading-span card__heading-span--2">The Competitor</span>
+								</h4>
+								<div class="card__details">
+									<ul>
+										<li>Up to five pages</li>
+										<li>Interactivity</li>
+										<li>Email, forms, external links</li>
+										<li>Quarterly updates</li>
+										<li>One-week turnaround</li>
+									</ul>
+								</div><!-- end card__details -->
+							</div><!-- end card__side -->
+
+							<div class="card__side card__side--back card__side--back-2">
+								<div class="card__cta">
+									<div class="card__price-box">
+										<p class="card__price-from">From</p>
+										<p class="card__price-value">$1,250</p>
+									</div><!-- end card__price-box -->
+									<a href="#popup-2"><i class="card__cta--icon-2 icon-basic-heart"></i></a>
+								</div><!-- end card__cta -->
+							</div><!-- end card__side -->
+						</div><!-- end card -->
+					</div><!-- end col-1-of-3 -->
+
+					<div class="col-1-of-3">
+						<div class="card">
+							<div class="card__side card__side--front">
+								<div class="card__picture card__picture--3">
+									&nbsp;
+								</div><!-- end card__picture -->
+								<h4 class="card__heading">
+									<span class="card__heading-span card__heading-span--3">The Service Station</span>
+								</h4>
+								<div class="card__details">
+									<ul>
+										<li>Unlimited pages</li>
+										<li>Unlimited interactivity</li>
+										<li>Blog integration </li>
+										<li>Monthly updates</li>
+										<li>Two-week turnaround</li>
+									</ul>
+								</div><!-- end card__details -->
+							</div><!-- end card__side -->
+
+							<div class="card__side card__side--back card__side--back-3">
+								<div class="card__cta">
+									<div class="card__price-box">
+										<p class="card__price-from">From</p>
+										<p class="card__price-value">$3,000</p>
+									</div><!-- end card__price-box -->
+									<a href="#popup-3"><i class="card__cta--icon-3 icon-basic-heart"></i></a>
+								</div><!-- end card__cta -->
+							</div><!-- end card__side -->
+						</div><!-- end card -->
+					</div><!-- end col-1-of-3 -->
+				</div><!-- end row -->
+				<div class="u-center-text u-margin-top-huge">
+                    <a href="#" class="button button--questionnaire">complete my questionnaire</a>
+                </div><!-- end u-center-text -->
+			</section><!-- end section-options -->
+
+			<!-- popup -->
+            
+            <div class="popup" id="popup-1">
+                <div class="popup__content">
+                    <div class="popup__left">
+                        <img src="images/cropped-mio.jpg" alt="Three coral-colored flowers" class="popup__img">
+                        <img src="images/gerome-bruneau-RPmWEtZLh7U-unsplash.jpg" alt="Field of sunflowers" class="popup__img">
+                    </div><!-- end popup__left -->
+                    <div class="popup__right">
+                        <a href="#section-options" class="popup__close">&times;</a>
+                        <h2 class="heading-secondary u-margin-bottom-small">No Commitment Necessary</h2>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Why a questionnaire?</h3>
+                        <p class="popup__text">The questionnaire is for both of us. First, it will help you articulate what you want and expect from your Website. You'll tell me about the resources you have available &mdash; such as photos, text, and logos &mdash; and which ones you'd like me to provide. From that, I'll be able to provide quotes and recommendations. </p>
+
+                        <a href="#" class="button button--questionnaire-1">complete my questionnaire</a>
+                    </div><!-- end popup__right -->
+                </div><!-- end popup__content -->
+			</div><!-- end popup-1 -->
+
+			<div class="popup" id="popup-2">
+                <div class="popup__content">
+                    <div class="popup__left">
+                        <img src="images/cropped-mio.jpg" alt="Three coral-colored flowers" class="popup__img">
+                        <img src="images/gerome-bruneau-RPmWEtZLh7U-unsplash.jpg" alt="Field of sunflowers" class="popup__img">
+                    </div><!-- end popup__left -->
+                    <div class="popup__right">
+                        <a href="#section-options" class="popup__close">&times;</a>
+                        <h2 class="heading-secondary u-margin-bottom-small">No Commitment Necessary</h2>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Why a questionnaire?</h3>
+                        <p class="popup__text">The questionnaire is for both of us. First, it will help you articulate what you want and expect from your Website. You'll tell me about the resources you have available &mdash; such as photos, text, and logos &mdash; and which ones you'd like me to provide. From that, I'll be able to provide quotes and recommendations. </p>
+
+                        <a href="#" class="button button--questionnaire-2">complete my questionnaire</a>
+                    </div><!-- end popup__right -->
+                </div><!-- end popup__content -->
+			</div><!-- end popup-2 -->
+
+			<div class="popup" id="popup-3">
+                <div class="popup__content">
+                    <div class="popup__left">
+                        <img src="images/cropped-mio.jpg" alt="Three coral-colored flowers" class="popup__img">
+                        <img src="images/gerome-bruneau-RPmWEtZLh7U-unsplash.jpg" alt="Field of sunflowers" class="popup__img">
+                    </div><!-- end popup__left -->
+                    <div class="popup__right">
+                        <a href="#section-options" class="popup__close">&times;</a>
+                        <h2 class="heading-secondary u-margin-bottom-small">No Commitment Necessary</h2>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Why a questionnaire?</h3>
+                        <p class="popup__text">The questionnaire is for both of us. First, it will help you articulate what you want and expect from your Website. You'll tell me about the resources you have available &mdash; such as photos, text, and logos &mdash; and which ones you'd like me to provide. From that, I'll be able to provide quotes and recommendations. </p>
+
+                        <a href="#" class="button button--questionnaire-3">complete my questionnaire</a>
+                    </div><!-- end popup__right -->
+                </div><!-- end popup__content -->
+			</div><!-- end popup-3 -->
+			
+			<section class="section-testimonials" id="section-testimonials">
+                <div class="bg-video">
+                    <video class="bg-video__content" autoplay muted loop>
+                        <source src="images/flowers.mp4" type="video/mp4">
+                        Your Browser is not supported!
+                    </video>
+                </div><!--end bg-video -->
+
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        Check My Work
+                    </h2>
+                </div><!-- end u-center-text -->
+
+                <div class="row">
+                    <div class="testimonial">
+                        <figure class="testimonial__shape">
+                            <img src="images/cropped-mio.jpg" class="testimonial__img" alt="Coral-colored flowers">
+                            <figcaption class="testimonial__caption">Coming Soon</figcaption>
+                        </figure>
+					<div class="testimonial__text">
+                            <h3 class="heading-tertiary heading-tertiary u-margin-bottom-small">This space could be yours!</h3>
+                            <p>
+                                I would love to highlight your site in this space as a way of showing future clients the work I've done.
+                            </p>
+                        </div><!-- end testimonial__text -->
+                    </div><!-- end testimonial -->
+                </div><!-- end row -->
+
+                <div class="row">
+                    <div class="testimonial">
+                        <figure class="testimonial__shape">
+                            <img src="images/gerome-bruneau-RPmWEtZLh7U-unsplash.jpg" class="testimonial__img" alt="A field of sunflowers">
+                            <figcaption class="testimonial__caption">Coming Soon!</figcaption>
+                        </figure>
+                        <div class="testimonial__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">This space could be yours!</h3>
+                            <p>
+                                I would love to highlight your site in this space as a way of showing future clients the work I've done.
+                            </p>
+                        </div><!-- end testimonial__text -->
+                    </div><!-- end testimonial -->
+                </div><!-- end row -->
+
+                <div class="u-center-text u-margin-top-huge">
+                    <a href="#popup-4" class="button-text">Check more of my work &rarr;</a>
+				</div><!-- end u-center-text -->
+				
+				<div class="popup" id="popup-4">
+					<div class="popup__comingSoon">
+						<a href="#section-testimonials" class="credits__close">&times;</a>
+						<p class="comingSoon">
+							Coming Soon!
+						</p>
+					</div><!-- end pop__content -->
+				</div><!-- end popup-4 -->
+            </section><!-- end section-testimonials -->
+
+			<section class="section-contact" id="section-contact">
+                <div class="row">
+                    <div class="contact">
+                        <div class="contact__form">
+                            <form action="#" class="form">
+                                <div class="u-margin-bottom-small">
+                                    <h2 class="heading-secondary">
+                                        Contact Me
+                                    </h2>
+                                </div><!-- end u-center-text -->
+
+                                <div class="form__group">
+                                    <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                    <label for="name" class="form__label">Full Name</label>
+                                </div><!-- end form__group -->
+
+                                <div class="form__group">
+                                    <input type="email" class="form__input" placeholder="Email Address" id="email" required>
+                                    <label for="email" class="form__label">Email Address</label>
+                                </div><!-- end form__group -->
+
+                                <div class="form__group">
+									<textarea class="form__input" placeholder="Write your message here" cols="40" rows="5"></textarea>
+								</div><!-- end form__group -->
+
+								<a href="#" class="button button--send">Send</a>
+                            </form>
+                        </div><!-- end contact__form -->
+                    </div><!-- end contact -->
+                </div><!-- end row -->
+            </section><!-- end section-contact -->
+
+		</main>
+		
+		<footer class="footer" id="footer">
+			<div class="footer__logo-box">
+                <img src="images/lily-orange-gradient.png" alt="Lily logo" class="footer__logo">
+			</div><!-- end footer__logo-box -->
+			
+            <div class="footer__row">
+                <div class="footer__column">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+                            <li class="footer__item"><a href="#section-contact" class="footer__link">Contact</a></li>
+                            <li class="footer__item"><a href="#section-testimonials" class="footer__link">Clients</a></li>
+							<li class="footer__item"><a href="#credits" class="footer__link">Credits</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Questionnaire</a></li>
+                        </ul>
+                    </div><!-- end footer__navigation -->
+                </div><!-- end col-1-of-2 -->
+
+                <div class="footer__column">
+                    <p class="footer__copyright">
+						This fully-functional Demo is modelled on a site designed by <a href="https://codingheroes.io/" class="footer__link" target="_blank">Jonas Schmedtmann</a> for his online course <a href="https://www.udemy.com/course/advanced-css-and-sass/" class="footer__link" target="_blank">Advanced CSS and Sass</a>.
+						<br>
+						Copyright &copy; 2020 Lillian Wight.
+                    </p>
+                </div><!-- end col-1-of-2 -->
+            </div><!-- end row -->
+		</footer>
+		
+		<div class="credits" id="credits">
+			<div class="credits__content">
+				<a href="#footer" class="credits__close">&times;</a>
+					<div class="row__credits">
+						<div class="col-1-of-6">
+							<a href="images/535.jpg" data-lightbox="credits" data-title="Background psd created by denamorado - www.freepik.com"><img src="images/roses.png" alt="Dozens and dozens of pastel-colored silk roses" class="credits__image"></a>
+						</div><!-- end col-1-of-6 -->
+						<div class="col-1-of-6">
+							<a href="images/erol-ahmed-aIYFR0vbADk-unsplash.jpg" data-lightbox="credits" data-title="Photo by Erol Ahmed on Unsplash"><img src="images/blue-succulent.jpg" alt="Blue-green succulent plant" class="credits__image"></a>
+						</div><!-- end col-1-of-6 -->
+						<div class="col-1-of-6">
+							<a href="images/fanning-tseng-E44CYHqUl1c-unsplash.jpg" data-lightbox="credits" data-title="Photo by Fanning Tseng on Unsplash"><img src="images/peony-2.jpg" alt="Vivid pink peony" class="credits__image"></a>
+						</div><!-- end col-1-of-6 -->
+						<div class="col-1-of-6">
+							<a href="images/leanna-cushman-L30-TzWbbfY-unsplash.jpg" data-lightbox="credits" data-title="Photo by Leanna Cushman on Unsplash"><img src="images/orange-flower.jpg" alt="Orange dahlia" class="credits__image"></a>
+						</div><!-- end col-1-of-6 -->
+						<div class="col-1-of-6">
+							<a href="images/annie-spratt-fnzmi8olu8c-unsplash.jpg" data-lightbox="credits" data-title="Photo by Annie Spratt on Unsplash"><img src="images/Tulips.jpg" alt="Closeup of dozens of pink tulips in a field" class="credits__image"></a>
+						</div><!-- end col-1-of-6 -->
+						<div class="col-1-of-6">
+							<a href="images/hans-ripa-eTngD4-3z6A-unsplash.jpg" data-lightbox="credits" data-title="Photo by Hans Ripa on Unsplash"><img src="images/red-rose.jpg" alt="Red Rose" class="credits__image"></a>
+						</div><!-- end col-1-of-6 -->
+					</div><!-- end row__credits -->
+
+					<div class="row__credits">
+						<div class="col-1-of-6">
+							<a href="images/v2osk-pQ7GIGO6esE-unsplash.jpg" data-lightbox="credits" data-title="Photo by v2osk on Unsplash"><img src="images/yellow-flower.jpg" alt="Yellow sunshine flower" class="credits__image"></a>
+						</div><!-- end col-1-of-6 -->
+						<div class="col-1-of-6">
+							<a href="images/daniel-minarik-gUYtxsqqkmQ-unsplash.jpg" data-lightbox="credits" data-title="Photo by Daniel Minarik on Unsplash"><img src="images/blue-flower.jpg" alt="Closeup of blue dahlia" class="credits__image"></a>
+						</div><!-- end col-1-of-6 -->
+						<div class="col-1-of-6">
+							<a href="images/mio-ito-B_SLtmXPKNA-unsplash.jpg" data-lightbox="credits" data-title="Photo by MIO ITO on Unsplash"><img src="images/cropped-mio.jpg" alt="Several pink dahlias" class="credits__image"></a>
+						</div><!-- end col-1-of-6 -->
+						<div class="col-1-of-6">
+							<a href="images/gerome-bruneau-RPmWEtZLh7U-unsplash.jpg" data-lightbox="credits" data-title="Photo by Gerome Bruneau on Unsplash"><img src="images/gerome-bruneau-RPmWEtZLh7U-unsplash.jpg" alt="Dozens of closely packed sunflowers" class="credits__image"></a>
+						</div><!-- end col-1-of-6 -->
+						<div class="col-1-of-6">
+							<a href="images/alessio-ferretti-b87N5yBdoE8-unsplash.jpg" data-lightbox="credits" data-title="Photo by Alessio Ferretti on Unsplash"><img src="images/alessio-ferretti-b87N5yBdoE8-unsplash.jpg" alt="Dozens of pink and purple lupins in a field" class="credits__image"></a>
+						</div><!-- end col-1-of-6 -->
+						<div class="col-1-of-6">
+							<a href="https://coverr.co/videos/flowers-and-bees-0sZs5yqLAX" target="_blank"><video class="credits__video" autoplay muted loop>
+								<source src="images/flowers.mp4" type="video/mp4">
+								Your Browser is not supported!
+							</video></a>
+						</div><!-- end col-1-of-6 -->
+					</div><!-- end row__credits -->
+				</div><!-- end credits__content -->
+			
+		</div><!-- end credits -->
+	</body>
 </html>
