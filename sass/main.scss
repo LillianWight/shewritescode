@@ -1,0 +1,35 @@
+/* The Perfect Website
+Lillian Wight
+February 11, 2020 */
+
+/* colors
+brandy rose #b07e7c rgb 176, 126, 124
+ironstone #774139 rgb 119, 65, 57
+dove gray #6c6564 rgb 108, 101, 100
+driftwood #a6784c rgb 166, 120, 76
+*/
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/bg-video";
+@import "components/button";
+@import "components/card";
+@import "components/credits";
+@import "components/form";
+@import "components/popup";
+@import "components/process-box";
+@import "components/samples";
+@import "components/testimonial";
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+
+@import "pages/home";

@@ -1,0 +1,72 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: $default-font-size;
+    line-height: 1.7;
+    color: $color-grey-dark;
+}
+
+.primaryHeading {
+    color: $color-white;
+    text-shadow: 1px 1px $color-grey-light-2;
+    display: block;
+    margin-bottom: 10rem;
+
+    &--main {
+        font-size: 4rem;
+        letter-spacing: .5rem;
+        font-weight: 700;
+        text-transform: lowercase;
+        word-spacing: 2.7rem;
+
+        @include respond(fourKmon) {
+            font-size: 8rem;
+        }
+    }
+
+    &--sub {
+        font-size: 9rem;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        animation: beautyGlow 3s 1s ease;
+        line-height: 1.4;
+    
+        @include respond(fourKmon) {
+            font-size: 18rem;
+        }
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color-red-light, $color-primary-light);
+    display: block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+
+    @include respond(fourKmon) {
+        font-size: 5.5rem;
+    }
+}
+
+.heading-tertiary {
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    @include respond(fourKmon) {
+        font-size: 3.5rem;
+    }
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    margin-bottom: 3rem;
+
+    @include respond(fourKmon) {
+        font-size: 2.5rem;
+    }
+}

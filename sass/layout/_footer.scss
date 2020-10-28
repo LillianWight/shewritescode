@@ -1,0 +1,87 @@
+.footer {
+    background-color: $color-grey-dark-2;
+    padding: 10rem 0;
+    font-size: 1.4rem;
+    color: $color-grey-light-1;
+
+    &__row {
+        display: table;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &__column {
+        display: table-cell;
+        width: 50%;
+        vertical-align: top;
+
+    }
+
+    &__logo-box {
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+
+    &__logo {
+        width: 15rem;
+        height: auto;
+    }
+
+    &__navigation {
+        border-top: 1px solid $color-grey-dark;
+        padding-top: 2rem;
+        display: inline-block;
+        width: 80%;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+        text-align: justify;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-grey-light-1;
+            background-color: $color-grey-dark-2;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:hover {
+            color: $color-orange-light;
+            box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            transform: rotate(5deg) scale(1.3);
+            border-radius: .5rem 1.5rem;
+            padding: 1px 1rem;
+        }
+
+        &:active {
+            color: $color-orange-dark;
+            background-color: $color-grey-light-1;
+            box-shadow: inset 2px 2px 5px $color-black;
+            transform: rotate(-5deg) scale(1);
+            padding: 1px 1rem;
+            border-radius: .5rem 1.5rem;
+        }
+
+    }
+
+    &__copyright {
+        border-top: 1px solid $color-grey-dark;
+        padding-top: 2rem;
+        float: right;
+        width: 80%;
+        word-spacing: .5rem;
+    }
+}

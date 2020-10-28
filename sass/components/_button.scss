@@ -1,0 +1,74 @@
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem 2.5rem;
+    text-transform: lowercase;
+
+    &--showMe {
+        background-color: rgba($color-black, 0.1);
+        color: $color-white;
+        font-size: 2rem;
+        box-shadow: inset 0.2rem 0.2rem 0.5rem, 0.7rem 0.7rem 0.5rem rgba($color-black, 0.5);
+        transition: all;
+        animation: showMeAnimation 2s ease-out backwards; 
+    
+            &:hover {
+                background-color: rgba($color-white, 0.1);
+                color: $color-black;
+                box-shadow: inset 0.2rem 0.2rem 0.5rem $color-white, 0.7rem 0.7rem 0.5rem rgba($color-black, 0.5); }
+    
+            &:active {
+                background-color: rgba($color-white, 0.1);
+                color: $color-black;
+                box-shadow: inset 0.4rem 0.4rem 0.9rem rgba($color-black, 0.8); }
+    }
+
+    &--send,
+    &--questionnaire,
+    &--questionnaire-1,
+    &--questionnaire-2,
+    &--questionnaire-3 {
+        background-color: rgba($color-black, 0.4);
+        color: $color-white;
+        font-size: 2rem;
+        box-shadow: inset 0.3rem 0.3rem 0.5rem $color-grey-light-1, 0.7rem 0.7rem 0.5rem rgba($color-black, 0.5);
+        transition: all;
+            
+            &:hover {
+                background-color: $color-grey-light-1;
+                color: $color-black;
+                box-shadow: inset 0.3rem 0.3rem 0.5rem $color-white, 0.7rem 0.7rem 0.5rem rgba($color-black, 0.5); }
+    
+            &:active {
+                background-color: rgba($color-white, 0.1);
+                color: $color-black;
+                box-shadow: inset 0.4rem 0.4rem 0.9rem rgba($color-black, 0.8); }
+    }
+}
+
+.button-text {
+    &:link,
+    &:visited {
+        font-size: 1.8rem;
+        color: $color-grey-dark-2;
+        text-shadow: none; 
+        display: inline-block;
+        text-decoration: none;
+        transition: all .2s;
+    }
+
+    &:hover {
+        padding: 0 1rem;
+        background-color: $color-grey-dark-2;
+        border-radius: .5rem 1.3rem;
+        color: $color-white;
+        box-shadow: inset 0.2rem 0.2rem 0.5rem rgba($color-grey-dark, 1), 0.5rem 0.5rem 0.5rem rgba($color-black, 0.4);
+    }
+
+    &:active {
+        background-color: $color-white;
+        color: $color-grey-dark-2;
+        box-shadow: inset 1px 1px 5px $color-grey-dark-2;
+    }
+}
