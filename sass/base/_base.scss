@@ -8,5 +8,9 @@ html {
   // This defines what 1rem is //
   font-size: 62.5%; }
 
+  @include respond (laptop) {
+    font-size: 60%;
+  }
+
 body {
     padding: 3rem; }

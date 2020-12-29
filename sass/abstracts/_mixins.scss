@@ -15,19 +15,15 @@
 
 // MEDIA QUERY MANAGER
 /*
-0-600px		Phone
-600-900px	Tablet
-900-1200px	Netbook
-1200-1800px	Current styles apply
-1800px+		Large desktops
-2560px+		4K monitors
+			Phone
+		px	Tablet
+	-1500px	Laptop
+1501px+	Current styles apply
 
 $breakpoint ARGUMENTS
 - phone
 - tablet
-- netbook
-- lg-desk
-- fourKmon
+- laptop
 
 1em = 16px
 */
@@ -38,13 +34,8 @@ $breakpoint ARGUMENTS
 	@if $breakpoint == tablet {
 		@media (max-width: 56.25em) { @content };
 	}
-	@if $breakpoint == netbook {
-		@media (max-width: 75em) { @content };
+	@if $breakpoint == laptop {
+		@media (max-width: 93.75em) { @content };
 	}
-	@if $breakpoint == lg-desk {
-		@media (min-width: 112.5em) { @content };
-	}
-	@if $breakpoint == fourKmon {
-		@media (min-width: 160em) { @content };
-	}
+
 }
