@@ -3,7 +3,7 @@ body {
     font-weight: 400;
     font-size: $default-font-size;
     line-height: 1.7;
-    color: $color-grey-dark;
+    color: $color-grey-dark-2;
 }
 
 .primaryHeading {
@@ -38,35 +38,27 @@ body {
 }
 
 .heading-secondary {
-    font-size: 3.5rem;
+    font-size: 4rem;
     text-transform: uppercase;
     font-weight: 700;
-    background-image: linear-gradient(to right, $color-red-light, $color-primary-light);
     display: block;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: $color-grey-dark;
     letter-spacing: 2px;
 
-    @include respond(fourKmon) {
-        font-size: 5.5rem;
-    }
+
 }
 
 .heading-tertiary {
     font-size: 2rem;
     text-transform: uppercase;
 
-    @include respond(fourKmon) {
-        font-size: 3.5rem;
-    }
+
+    
 }
 
 .paragraph {
     font-size: $default-font-size;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 
-    @include respond(fourKmon) {
-        font-size: 2.5rem;
-    }
+ 
 }

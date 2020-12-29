@@ -1,14 +1,15 @@
 .section-about {
     background-color: $color-grey-light-1;
-    padding: 30rem 0 35rem 0;
+    padding: 15rem 20rem 20rem 20rem;
     margin-top: -35vh;
+    
 }
 
 .section-process {
     padding: 20rem 0;
     background-image: linear-gradient(to right bottom, rgba($color-red-light, 0.6), rgba($color-primary-light, 0.6)), url(../../images/Tulips.jpg);
     background-size: cover;
-    margin-top: -14rem;
+    margin-top: -10rem;
     transform: skewY(-10deg);
 
     & > * {

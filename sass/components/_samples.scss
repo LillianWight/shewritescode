@@ -2,70 +2,38 @@
     position: relative;
     
     &__photo {
-        width: 55%;
+        width: 65%;
         position: absolute;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .5);
-        border-radius: 2px;
+        border-radius: 3px;
         z-index: 10;
         transition: all .2s;
         outline-offset: 2rem;
 
-        @include respond(fourKmon) {
-            width: 100%;
-            border-radius: .6rem;
-        }
-
         &--s1 {
-            left: 1.5rem;
-            top: 1rem;
+            left: 1rem;
+            top: -1rem;
 
-            @include respond(fourKmon) {
-                left: 2rem;
-                top: 1rem;
-            }
-            
             &:hover {
                 outline: .5rem dotted rgba($color-black, .2);
-
-                @include respond(fourKmon) {
-                    outline: 1rem dotted rgba($color-black, .4);
-                }
             }
         }
 
         &--s2 {
-            right: 0;
-            top: 8rem;
-
-            @include respond(fourKmon) {
-                left: 28rem;
-                top: 12rem;
-            }
+            left: 11rem;
+            top: 9rem;
 
             &:hover {
                 outline: .5rem dotted rgba($color-black, .2);
-
-                @include respond(fourKmon) {
-                    outline: 1rem dotted rgba($color-black, .4);
-                }
             }
         }
 
         &--s3 {
-            left: 20%;
-            top: 18rem;
-
-            @include respond(fourKmon) {
-                left: 16rem;
-                top: 29rem;
-            }
+            left: 15%;
+            top: 19rem;
 
             &:hover {
                 outline: .5rem dotted rgba($color-black, .2);
-
-                @include respond(fourKmon) {
-                    outline: 1rem dotted rgba($color-black, .4);
-                }
             }
         }
 
