@@ -686,7 +686,7 @@ body {
 
 .header {
   height: 110vh;
-  background-image: linear-gradient(to bottom right, rgba(255, 204, 206, 0.6), rgba(176, 126, 124, 0.6)), url(../images/roses.png);
+  background-image: linear-gradient(to bottom right, rgba(255, 204, 206, 0.6), rgba(176, 126, 124, 0.6)), url(../images/roses-500.png);
   background-size: cover;
   background-position: top;
   position: relative;
